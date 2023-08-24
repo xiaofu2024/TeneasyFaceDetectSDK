@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
   s.resources = "TeneasyFaceDetectSDK/Assets/**/*"
   
    s.resource_bundles = {
-     'TeneasyFaceDetectSDK' => ['TeneasyFaceDetectSDK/Assets/*.png', 'TeneasyFaceDetectSDK/Assets/*.wav', 'TenFaceLiveSDK/Assets/GifPic/*.gif']
+     'TeneasyFaceDetectSDK' => ['TeneasyFaceDetectSDK/Assets/*.png', 'TeneasyFaceDetectSDK/Assets/WavMusic/*.wav', 'TenFaceLiveSDK/Assets/GifPic/*.gif']
    }
    
 
