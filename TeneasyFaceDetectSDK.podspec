@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'TeneasyFaceDetectSDK/Classes/**/*'
-  s.resources = "Assets/**/*"
+  s.resources = "TeneasyFaceDetectSDK/Assets/**/*"
   
    s.resource_bundles = {
      'TeneasyFaceDetectSDK' => ['TeneasyFaceDetectSDK/Assets/*.png', 'TeneasyFaceDetectSDK/Assets/*.wav', 'TenFaceLiveSDK/Assets/GifPic/*.gif']
