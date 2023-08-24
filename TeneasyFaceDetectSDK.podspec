@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TeneasyFaceDetectSDK'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of TeneasyFaceDetectSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -32,11 +32,18 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'TeneasyFaceDetectSDK/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'TeneasyFaceDetectSDK' => ['TeneasyFaceDetectSDK/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'TeneasyFaceDetectSDK' => ['TeneasyFaceDetectSDK/Assets/*.png', 'TeneasyFaceDetectSDK/Assets/*.wav', 'TenFaceLiveSDK/Assets/GifPic/*.gif']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.static_framework = true
+  
+   s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'WHToast'#, '~>0.1.0'
+   s.dependency 'Masonry'
+   s.dependency 'NTESLiveDetect', '= 3.1.2'
+   s.dependency 'MBProgressHUD'
 end
