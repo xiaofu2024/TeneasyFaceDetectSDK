@@ -27,3 +27,4 @@ pod 'TeneasyFaceDetectSDK'
 ## License
 
 TeneasyFaceDetectSDK is available under the MIT license. See the LICENSE file for more info.
+# TeneasyFaceDetectSDK
