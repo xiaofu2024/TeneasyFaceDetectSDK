@@ -4,7 +4,7 @@ platform :ios, '10.0'
 
 target 'TeneasyFaceDetectSDK_Example' do
   pod 'TeneasyFaceDetectSDK', :path => '../'
-
+  #pod 'TeneasyFaceDetectSDK', :git => 'https://github.com/tianxuefeng/TeneasyFaceDetectSDK.git'
   target 'TeneasyFaceDetectSDK_Tests' do
     inherit! :search_paths
 
