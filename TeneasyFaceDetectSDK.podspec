@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TeneasyFaceDetectSDK'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A short description of TeneasyFaceDetectSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -44,7 +44,7 @@ TODO: Add long description of the pod here.
 
   s.static_framework = true
   
-   s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'AFNetworking'#, '~> 2.3'
    s.dependency 'WHToast'#, '~>0.1.0'
    s.dependency 'Masonry'
    s.dependency 'NTESLiveDetect', '= 3.1.2'
