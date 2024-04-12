@@ -13,12 +13,15 @@
 #import "NTESLDSuccessViewController.h"
 #import "WHToast.h"
 #import "NTESTimeoutToastView.h"
-#import "NetworkReachability.h"
+//#import "NetworkReachability.h"
 #import "SceneDelegate.h"
 //#import "qixin-Swift.h"
 
 //#import "AppDelegate.h"
 #import <MBProgressHUD/MBProgressHUD.h>
+
+//#import <TeneasyFaceDetectSDK/TeneasyFaceDetectSDK-Swift.h>
+
 
 static NSOperationQueue *_queue;
 
@@ -50,9 +53,28 @@ static NSOperationQueue *_queue;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
 
     WeakSelf(self);
-    [NetworkReachability AFNReachability:^(AFNetworkReachabilityStatus status) {
+    
+    [self startLiveDetect];
+    /*[NetworkReachability AFNReachability:^(AFNetworkReachabilityStatus status) {
         [self startLiveDetect];
-    }];
+    }];*/
+    
+    /*
+     let reachability = try! Reachability()
+
+     reachability.whenReachable = { reachability in
+         if reachability.connection == .wifi {
+             print("Reachable via WiFi")
+         } else {
+             print("Reachable via Cellular")
+         }
+     }
+     */
+    
+    //Reachability *ab = [[Reachability alloc] init];
+    
+    
+    
     
     if (@available(iOS 13.0, *)) {
         NSArray *array =[[[UIApplication sharedApplication] connectedScenes] allObjects];
