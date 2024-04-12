@@ -71,11 +71,6 @@ static NSOperationQueue *_queue;
      }
      */
     
-    //Reachability *ab = [[Reachability alloc] init];
-    
-    
-    
-    
     if (@available(iOS 13.0, *)) {
         NSArray *array =[[[UIApplication sharedApplication] connectedScenes] allObjects];
         UIWindowScene *windowScene = (UIWindowScene *)array[0];
