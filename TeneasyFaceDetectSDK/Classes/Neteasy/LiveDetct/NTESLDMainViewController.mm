@@ -286,9 +286,9 @@ static NSOperationQueue *_queue;
     dispatch_async(dispatch_get_main_queue(), ^{
         [WHToast setMaskColor:UIColorFromHexA(0x000000, 0.75)];
         [WHToast setCornerRadius:12*KWidthScale];
-        //[WHToast setFont:[UIFont systemFontOfSize:13]];
-        [WHToast setFontSize:13*KWidthScale];
-        [WHToast setPadding:14*KWidthScale];
+        [WHToast setFont:[UIFont systemFontOfSize:13*KWidthScale]];
+        [WHToast setTopPadding:14*KWidthScale];
+        
         CGFloat marginY = IS_IPHONE_X ? (SCREEN_HEIGHT - 237*KHeightScale - 34 - 64) : (SCREEN_HEIGHT - 237*KHeightScale - 64);
         [WHToast showMessage:msg originY:marginY duration:3.0 finishHandler:nil];
     });
