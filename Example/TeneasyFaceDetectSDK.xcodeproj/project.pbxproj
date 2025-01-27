@@ -273,11 +273,13 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TeneasyFaceDetectSDK_Example/Pods-TeneasyFaceDetectSDK_Example-resources.sh",
 				"${PODS_ROOT}/NTESLiveDetect/Assets/NTESLiveDetectBundle.bundle",
+				"${PODS_ROOT}/NTESLiveDetect/Assets/RiskPerceptionBundle.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/TeneasyFaceDetectSDK/TeneasyFaceDetectSDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NTESLiveDetectBundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RiskPerceptionBundle.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TeneasyFaceDetectSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,12 +341,14 @@
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/WHToast/WHToast.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NTESLiveDetect/Nenn/NEYDnn.framework/NEYDnn",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WHToast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NEYDnn.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

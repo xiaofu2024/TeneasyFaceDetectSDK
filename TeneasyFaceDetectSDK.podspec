@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TeneasyFaceDetectSDK'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = 'A short description of TeneasyFaceDetectSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -46,7 +46,7 @@ TODO: Add long description of the pod here.
    s.dependency 'WHToast','~>0.1.0'
    #s.dependency 'WHToast'#, '~>0.1.0'
    s.dependency 'Masonry'
-   s.dependency 'NTESLiveDetect', '= 3.1.2'
+   s.dependency 'NTESLiveDetect', '= 3.2.8'
    s.dependency 'MBProgressHUD'
    #s.dependency 'ReachabilitySwift'
 end
