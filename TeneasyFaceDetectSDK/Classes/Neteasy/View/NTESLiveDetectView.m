@@ -418,7 +418,7 @@
 -(void)transparentCutRoundArea{
 
     // 圆形透明区域
-    UIBezierPath *alphaPath = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, imageViewWidth, imageViewHeight)];
+    UIBezierPath *alphaPath = [UIBezierPath bezierPathWithRect:CGRectMake(-20, -20, SCREEN_WIDTH - 20, imageViewHeight + 60)];
     UIBezierPath *arcPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(imageViewWidth/2, imageViewHeight/2) radius:cameraViewRadius-1 startAngle:0 endAngle:2*M_PI clockwise:NO];
     [alphaPath appendPath:arcPath];
     CAShapeLayer *layer = [CAShapeLayer layer];
